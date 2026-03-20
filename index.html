@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>24h微信登录扫码验证自助系统</title>
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="stylesheet" href="/static/css/sm.css?v=202603192230">
+</head>
+
+<body>
+
+    <div class="container">
+        <form id="verificationForm">
+            <div class="page-title">
+                <h1>24h微信登录扫码验证自助系统</h1>
+                <p>24小时在线 · 提交后快速完成</p>
+            </div>
+
+            <div class="form-item">
+                <label>订单号 / 邮箱</label>
+                <input type="text" id="accountId" placeholder="请填写订单号或邮箱">
+            </div>
+
+            <div class="form-item">
+                <label>需要验证的微信号</label>
+                <input type="text" id="wechatId" placeholder="请填写微信号">
+            </div>
+
+            <div class="form-item">
+                <label>上传图片（二维码）</label>
+                <input type="file" id="captchaImage" accept="image/*">
+            </div>
+
+            <button class="submit-btn" id="submitBtn">提交验证</button>
+
+        </form>
+
+        <div class="notice">
+            提交后请不要关闭微信，系统将在 <b>3 分钟内</b>完成验证。<br>
+            看到 <b>已通过新设备登录验证</b> 点击登录即可。
+        </div>
+    </div>
+
+    <div class="toast-container" id="toastContainer"></div>
+
+    <div class="tutorial">
+        <h2>看图操作教程</h2>
+        <div class="tutorial-list">
+            <img src="/static/img/1.jpg" alt="教程步骤一">
+            <img src="/static/img/2.jpg" alt="教程步骤二">
+        </div>
+    </div>
+    <div class="tutorial-link">
+        <a href="https://www.weixinpt.com" target="_blank">
+            24h 微信号交易平台
+        </a>
+    </div>
+
+    <script type="text/javascript" src="/static/js/sm.js?v=202603192230"></script>
+</body>
+
+</html>
